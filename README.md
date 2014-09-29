@@ -1,13 +1,13 @@
 toaster
 =======
 
-Android Toaster!
+Android Toaster! You can use toast anywhere.
 
 ## Usage
 
 Initialize Toaster in the application class.
 
-```
+```java
 public class MyApplication extends android.app.Application {
     @Override
     public void onCreate() {
@@ -19,7 +19,7 @@ public class MyApplication extends android.app.Application {
 
 Define `android:name` in AndroidManifest.xml
 
-```
+```xml
 <application
         android:name=".MyApplication"
         ...
@@ -27,13 +27,13 @@ Define `android:name` in AndroidManifest.xml
 
 You can use anywhere.
 
-```
+```java
 Toaster.pon("Hello Toaster!");
 ```
 
 ex.
 
-```
+```java
 public class MainActivity extends ActionBarActivity {
 
     @Override

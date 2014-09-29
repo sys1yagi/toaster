@@ -24,22 +24,22 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
 }
 
-group = 'com.sys1yagi.android.toaster'
-version = '1.0.0'
-// publishing description
-publishing {
-    publications {
-        sample(MavenPublication) {
-            from components.java
-            artifact ('document.html') {
-                classifier = 'doc'
-                extension  = 'html'
-            }
-        }
-    }
-    repositories {
-        maven {
-            url 'file://Users/mike/maven-sample-repo'
-        }
-    }
-}
+//group = 'com.sys1yagi.android.toaster'
+//version = '1.0.0'
+//// publishing description
+//publishing {
+//    publications {
+//        sample(MavenPublication) {
+//            from components.java
+//            artifact ('document.html') {
+//                classifier = 'doc'
+//                extension  = 'html'
+//            }
+//        }
+//    }
+//    repositories {
+//        maven {
+//            url 'file://Users/mike/maven-sample-repo'
+//        }
+//    }
+//}

@@ -1,0 +1,45 @@
+apply plugin: 'com.android.application'
+apply plugin : 'maven-publish'
+
+android {
+    compileSdkVersion 20
+    buildToolsVersion "20.0.0"
+
+    defaultConfig {
+        applicationId "toaster.android.sys1yagi.com.toaster"
+        minSdkVersion 10
+        targetSdkVersion 20
+        versionCode 1
+        versionName "1.0.0"
+    }
+    buildTypes {
+        release {
+            runProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+}
+
+group = 'com.sys1yagi.android.toaster'
+version = '1.0.0'
+// publishing description
+publishing {
+    publications {
+        sample(MavenPublication) {
+            from components.java
+            artifact ('document.html') {
+                classifier = 'doc'
+                extension  = 'html'
+            }
+        }
+    }
+    repositories {
+        maven {
+            url 'file://Users/mike/maven-sample-repo'
+        }
+    }
+}

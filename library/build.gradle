@@ -6,7 +6,7 @@ android {
     buildToolsVersion "20.0.0"
 
     defaultConfig {
-        applicationId "toaster.android.sys1yagi.com.toaster"
+        applicationId "com.sys1yagi.android.toaster"
         minSdkVersion 10
         targetSdkVersion 20
         versionCode 1

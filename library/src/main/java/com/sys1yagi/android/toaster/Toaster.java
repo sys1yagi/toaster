@@ -7,8 +7,12 @@ public class Toaster {
 
     private static Context APPLICATION_CONTEXT;
 
-    public static void initialize(Context context) {
+        public static void plugInOutlet(Context context) {
         APPLICATION_CONTEXT = context.getApplicationContext();
+    }
+
+    public static void unplug() {
+        APPLICATION_CONTEXT = null;
     }
 
     public static void pon(String message){

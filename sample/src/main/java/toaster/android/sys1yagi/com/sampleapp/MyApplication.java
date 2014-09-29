@@ -6,6 +6,6 @@ public class MyApplication extends android.app.Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        Toaster.initialize(this);
+        Toaster.plugInOutlet(this);
     }
 }

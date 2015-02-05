@@ -1,3 +1,8 @@
+repositories {
+    jcenter()
+    maven { url 'http://dl.bintray.com/sys1yagi/maven' }
+}
+
 apply plugin: 'com.android.application'
 
 android {
@@ -22,5 +27,6 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:21.0.3'
-    compile project(':toaster')
+//    compile project(':toaster')
+    compile 'com.sys1yagi.android:toaster:1.0.0'
 }

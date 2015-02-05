@@ -1,6 +1,5 @@
 repositories {
     jcenter()
-    maven { url 'http://dl.bintray.com/sys1yagi/maven' }
 }
 
 apply plugin: 'com.android.application'

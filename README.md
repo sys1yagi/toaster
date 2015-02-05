@@ -3,6 +3,14 @@ toaster
 
 Android Toaster! You can use toast anywhere.
 
+## Setup
+
+```groovy
+dependencies {
+    compile 'com.sys1yagi.android:toaster:1.0.0'
+}
+```
+
 ## Usage
 
 Initialize Toaster in the application class.

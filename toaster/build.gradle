@@ -25,10 +25,13 @@ group = 'com.sys1yagi.android'
 version = '1.0.0'
 def siteUrl = 'https://github.com/sys1yagi/toaster'
 def gitUrl = 'https://github.com/sys1yagi/toaster.git'
+Properties properties = new Properties()
+properties.load(project.rootProject.file('local.properties').newDataInputStream())
 
 bintray {
-    user = bintray_user
-    key = bintray_api_key
+
+    user = properties.getProperty("bintray_user")
+    key = properties.getProperty("bintray_api_key")
 
     configurations = ['archives'] //When uploading configuration files
     pkg {
